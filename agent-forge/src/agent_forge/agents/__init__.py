@@ -1,0 +1,1 @@
+"""Agent implementations — Icarus (prototype) and Aegis (engineered)."""

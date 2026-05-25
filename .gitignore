@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs and runtime data
+logs/
+agent-forge/data/audit_log.jsonl
+
+# Build artifacts
+build/
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+htmlcov/.env

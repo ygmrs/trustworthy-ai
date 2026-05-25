@@ -1,0 +1,1 @@
+"""Tool definitions available to both Icarus and Aegis."""
