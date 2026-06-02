@@ -67,7 +67,7 @@ export default function App() {
 
       const auditRes = await fetch('/api/audit');
       const auditData = await auditRes.json();
-      setAuditEntries(auditData.entries);
+      setAuditEntries(auditData.entries.filter(e => e.email_id === selectedEmail.id && e.agent_id === selectedAgent));
     } catch (err) {
       console.error('Run failed:', err);
     } finally {
@@ -79,11 +79,10 @@ export default function App() {
     if (result.blocked) return '🛡️  Blocked — Threat prevented by guardrail policy';
     const v = result.verdict.toLowerCase();
     if (['malicious', 'quarantined'].some(term => v.includes(term))) return '🚨  Malicious threat detected — email quarantined';
-    if (v.includes('suspicious')) return '⚠️  Suspicious — flagged for review';
     if (v.includes('safe'))       return '✅  Safe — no threats detected';
+    if (v.includes('suspicious')) return '⚠️  Suspicious — flagged for review';
     return '🔍  Triage complete';
   }
-
   return (
       <div className="app">
         <header className="header">
@@ -109,8 +108,8 @@ export default function App() {
                       if (lastResult.blocked) return 'verdict-blocked';
                       const v = lastResult.verdict.toLowerCase();
                       if (['malicious', 'quarantined'].some(term => v.includes(term))) return 'verdict-malicious';
-                      if (v.includes('suspicious')) return 'verdict-warn';
                       if (v.includes('safe'))       return 'verdict-ok';
+                      if (v.includes('suspicious')) return 'verdict-warn';
                       return 'verdict-info';
                     })()}`}
                     onMouseEnter={() => setTooltipVisible(true)}
