@@ -56,7 +56,7 @@ Aegis evaluated the same email before LLM execution. The input guard fired with 
 ## Author
 
 **Yagmur Sahin** — Head & VP of Engineering  
-IEEE Senior Member · 5 US Patents · M.S. Computer Engineering (Deep Learning)
+IEEE Senior Member · 5 US Patents · M.S. Computer Engineering
 
 
 ## License
