@@ -34,9 +34,9 @@ See [`agent-forge/README.md`](agent-forge/README.md) and
 
 Aegis is engineered around four pillars:
 
-1. **Containment** — sandboxed tools, scoped permissions, blast-radius limits
+1. **Security** — sandboxed tools, scoped permissions, blast-radius limits
 2. **Observability** — structured traces of every step, replayable
-3. **Verifiability** — input and output guards, risk gating on tool calls
+3. **Guardrails** — input and output guards, risk gating on tool calls
 4. **Governance** — append-only audit log with full accountability
 
 ## Icarus vs. Aegis
