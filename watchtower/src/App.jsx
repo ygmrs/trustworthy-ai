@@ -121,7 +121,7 @@ export default function App() {
                     <div className="verdict-tooltip">
                       {lastResult.blocked
                           ? lastResult.block_reason
-                          : lastResult.verdict.replace(/\*\*/g, '').trim()}
+                          : lastResult.summary.replace(/\*\*/g, '').trim()}
                     </div>
                 )}
               </div>

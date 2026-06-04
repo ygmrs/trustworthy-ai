@@ -52,6 +52,7 @@ class RunResult(BaseModel):
     agent_id: AgentID
     email_id: str
     verdict: str
+    summary: str = ""
     trace: list[TraceStep]
     blocked: bool = False
     block_reason: str | None = None

@@ -119,7 +119,8 @@ async def run(email: dict) -> RunResult:
             tracer.tool_result(tool_name, result)
 
             if tool_name == "classify_email":
-                verdict = tool_input.get("verdict", "unknown")
+                value = tool_input.get("verdict")
+                verdict = value if isinstance(value, str) else "unknown"
 
             tool_results.append({
                 "type": "tool_result",
@@ -145,6 +146,7 @@ async def run(email: dict) -> RunResult:
         agent_id=AgentID.icarus,
         email_id=email["id"],
         verdict=verdict,
+        summary=summary or verdict,
         trace=tracer.steps,
         blocked=False,
     )
