@@ -55,9 +55,9 @@ Aegis evaluated the same email before LLM execution. The input guard fired with 
 
 ### Live AI Agent Runs
 
-[![Live AI agent run demo](docs/live-ai-agent-runs-preview.png)](docs/ai_agents.mp4)
+[![Live AI agent run demo](docs/live-ai-agent-runs-preview.png)](docs/ai-agents.mp4)
 
-[Watch the full live AI agent run demo](docs/ai_agents.mp4)
+[Watch the full live AI agent run demo](docs/ai-agents.mp4)
 
 This recording shows the end-to-end live demo flow: Icarus executing the phishing-triage task without containment, guardrails, observability, or auditability; and Aegis running the same scenario with input protection, trace visibility, policy enforcement, and auditable decision records.
 
