@@ -67,7 +67,11 @@ This recording shows the end-to-end live demo flow: Icarus executing the phishin
 
 **Yagmur Sahin** — Head & VP of Engineering  
 IEEE Senior Member · 5 US Patents · M.S. Computer Engineering
+ 
+## Engineering AI for Real-World Trust
 
+Official SECON NJ speaker profile:  
+[https://www.njsecon.org/speaker/yagmur-sahin](https://www.njsecon.org/speaker/yagmur-sahin)
 
 ## License
 
