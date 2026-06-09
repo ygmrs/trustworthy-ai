@@ -55,7 +55,9 @@ Aegis evaluated the same email before LLM execution. The input guard fired with 
 
 ### Live AI Agent Runs
 
-[![Live AI agent run demo](docs/live-ai-agent-runs-preview.png)](docs/ai-agents.mp4)
+<video src="docs/ai-agents.mp4" controls width="100%">
+  Your browser does not support the video tag.
+</video>
 
 [Watch the full live AI agent run demo](docs/ai-agents.mp4)
 
