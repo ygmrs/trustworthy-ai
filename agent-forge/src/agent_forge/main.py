@@ -3,12 +3,11 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from agent_forge.config import CORS_ORIGINS, EMAILS_PATH, AUDIT_LOG_PATH
+from agent_forge.config import AUDIT_LOG_PATH, CORS_ORIGINS, EMAILS_PATH
 from agent_forge.models import AgentID, RunRequest, RunResult
 
 app = FastAPI(

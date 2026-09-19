@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
-from enum import Enum
+from enum import StrEnum
 from typing import Any
+
 from pydantic import BaseModel, Field
 
 
@@ -21,7 +22,7 @@ class Email(BaseModel):
     is_attack: bool = False
 
 
-class AgentID(str, Enum):
+class AgentID(StrEnum):
     icarus = "icarus"
     aegis = "aegis"
 
@@ -30,7 +31,7 @@ class RunRequest(BaseModel):
     email_id: str = Field(..., description="ID of the email to triage.")
 
 
-class StepKind(str, Enum):
+class StepKind(StrEnum):
     thinking = "thinking"
     tool_call = "tool_call"
     tool_result = "tool_result"

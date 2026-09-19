@@ -8,8 +8,6 @@ This is Pillar 2: Verifiability (output side).
 
 from __future__ import annotations
 
-from agent_forge.config import OUTPUT_RISK_THRESHOLD
-
 # Risk scores per tool + input characteristics.
 # Score 0.0 = no risk, 1.0 = block immediately.
 _EXTERNAL_DOMAIN_PATTERN_KEYWORDS = [

@@ -9,8 +9,7 @@ in the Watchtower audit panel.
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
-from pathlib import Path
+from datetime import UTC, datetime
 from typing import Any
 
 from agent_forge.config import AUDIT_LOG_PATH
@@ -32,7 +31,7 @@ def log_entry(
     """Append one entry to the audit log."""
     _ensure_log_file()
     entry = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": datetime.now(UTC).isoformat(),
         "agent_id": agent_id,
         "email_id": email_id,
         "action": action,
