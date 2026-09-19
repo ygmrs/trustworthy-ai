@@ -44,5 +44,7 @@ build/
 *.tsbuildinfo
 
 # Test coverage
+.coverage
 coverage/
-htmlcov/.env
+htmlcov/
+coverage.xml
