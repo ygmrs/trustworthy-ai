@@ -46,10 +46,11 @@ API docs auto-generated at **http://localhost:8000/docs**
 Health check: `curl http://localhost:8000/api/health`
 
 
-## Tests
+## Quality Checks
 
 ```bash
-uv run pytest tests/
+uv run ruff check src
+uv run python -m compileall -q src
 ```
 
 ## Structure
