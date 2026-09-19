@@ -22,7 +22,7 @@ Aegis is built around four production AI engineering principles:
 
 **Verifiability** — an input guard scans every email for injection patterns before the LLM sees it. An output guard risk-scores every tool call before it fires. Blocks are deterministic, not probabilistic.
 
-**Governance** — every agent action is appended to an immutable JSONL audit log. When a CISO asks why an email was blocked, the answer exists and is timestamped.
+**Governance** — every agent action is appended to a structured JSONL audit log, providing a timestamped record of agent decisions and actions.
 
 
 ## Setup
