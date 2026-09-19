@@ -1,6 +1,6 @@
 # Watchtower
 
-React + Vite frontend for the Icarus vs Aegis live.
+React + Vite frontend for the Icarus vs. Aegis live demonstration.
 
 ## Overview
 Watchtower is the observation layer of the system — the interface that makes the difference between Icarus and Aegis *visible* to a live audience.
@@ -52,8 +52,8 @@ src/
 
 ## Stack
 
-- React 18
-- Vite 5
+- React 19
+- Vite 8
 - Plain CSS — dark theme, no component library
 - Native `fetch` for REST
 - Custom styled tooltip for verdict detail
