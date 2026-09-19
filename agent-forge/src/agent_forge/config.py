@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
@@ -22,7 +23,7 @@ class Settings(BaseSettings):
     """
 
     # Anthropic
-    anthropic_api_key: str = "ANTHROPIC_API_KEY"
+    anthropic_api_key: str = Field(..., min_length=1, repr=False)
     model_id: str = "claude-sonnet-4-6"
 
     # Guard thresholds (0.0 – 1.0)
